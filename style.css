@@ -1,0 +1,36 @@
+:root{--bordo:#6b1230;--bordo-escuro:#3d0a1c;--dourado:#d4af37;--dourado-claro:#f0d77a;--creme:#fdf3e1}
+html{background:#3d0a1c}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"Inter","Segoe UI",Roboto,Arial,sans-serif;font-size:14px;color:var(--creme);line-height:1.5;
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;
+  background:
+    radial-gradient(ellipse at 85% 15%,rgba(212,175,55,.22) 0%,transparent 40%),
+    radial-gradient(ellipse at 10% 90%,rgba(212,175,55,.14) 0%,transparent 40%),
+    linear-gradient(135deg,#3d0a1c 0%,#6b1230 50%,#4a0d22 100%);
+}
+main{width:100%;max-width:560px;padding:32px 20px 0;flex:1;display:flex;flex-direction:column;align-items:center}
+.perfil{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+.perfil img{width:96px;height:96px;border-radius:50%;object-fit:cover;background:var(--bordo-escuro);
+  border:3px solid var(--dourado);
+  box-shadow:0 0 0 3px var(--bordo-escuro),0 0 0 5px var(--dourado-claro),0 0 22px rgba(212,175,55,.55)}
+.perfil h1{font-size:16px;font-weight:600;color:var(--dourado-claro);margin-top:8px}
+.perfil p{font-size:14px}
+.botoes{display:flex;flex-direction:column;gap:12px;width:100%;max-width:330px;margin-top:32px}
+.btn{display:block;padding:10px 16px;text-align:center;text-decoration:none;color:var(--creme);font-size:13px;
+  background:rgba(255,255,255,.07);border:1px solid var(--dourado);border-radius:8px;transition:background .2s,color .2s}
+.btn:hover{background:var(--dourado);color:var(--bordo-escuro);font-weight:600}
+.btn:focus-visible,.social a:focus-visible{outline:2px solid var(--dourado-claro);outline-offset:3px}
+.conteudo{width:100%;margin-top:32px}
+.conteudo h2{font-size:18px;margin-bottom:12px;text-align:center;color:var(--dourado-claro)}
+.sobre p{margin-bottom:12px;text-align:justify}
+.projetos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:rgba(255,255,255,.07);border:1px solid var(--dourado);border-radius:8px;overflow:hidden}
+.card img{width:100%;height:150px;object-fit:cover;display:block;background:var(--bordo-escuro)}
+.card div{padding:12px;display:flex;flex-direction:column;gap:10px}
+.card h3{font-size:14px;font-weight:600;color:var(--dourado-claro)}
+footer{display:flex;flex-direction:column;align-items:center;gap:24px;padding:40px 20px 24px;font-size:12px}
+.social{display:flex;gap:24px}
+.social a{color:var(--dourado);display:flex;transition:color .2s}
+.social a:hover{color:var(--dourado-claro)}
+.social svg{width:20px;height:20px;fill:currentColor}
